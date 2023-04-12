@@ -1,0 +1,415 @@
+/*mobile*/
+@media (min-width: 800px) {
+    body{
+        margin: 0;
+        padding: 0;
+        font-family: 'Courier New', Courier, monospace;
+        background: linear-gradient(150deg,#48C9B0, #2E4053);
+        height: 100vh;
+    }
+    .formulario{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 400px;
+        background-color: white;
+        border-radius: 10px;
+    
+    }
+    .formulario img{
+        position: relative;
+        left: 29%;
+    }
+    
+    .formulario h1{
+        text-align: center;
+         padding: 0 0 20px 0;
+         border-bottom: 1px solid silver ;
+    
+    }
+    .formulario form {
+        padding: 0 40px;
+        box-sizing: border-box;
+    } 
+    form .usuario {
+        position: relative;
+        border-bottom: 2px solid #adadad;
+        margin: 30px 0;
+    }
+    
+        .usuario input{
+            width: 100%;
+            padding: 0 5px;
+            height: 40px;
+            font-size: 16 px;
+            border: none;
+            background: none;
+            outline: none;
+    
+        }
+        .usuario label{
+            position: absolute;
+            top: 50%;
+            left: 5px;
+            color: #adadad;
+            transform: translateY(-50%);
+            font-size: 16px;
+            pointer-events: none;
+            transition: .5s; 
+    
+        }
+        .usuario span::before {
+            content: '';
+            position: absolute;
+            top: 40px;
+            left:0;
+            width: 2px;
+            background: #6C3483;
+            
+        }
+        .usuario input:focus ~ label,
+        .usuario input:focus ~ label{
+          top:-5px;
+          color: #6C3483;         
+        }
+        .usuario input:focus ~span::before,
+        .usuario input:focus ~span::before{
+            width: 100%;
+        }
+        .recordar:hover{
+            text-decoration: underline;
+        }
+        input[type="submit"]{
+            width: 100%;
+            height: 50px;
+            border: 1px solid;
+            background: #6C3483;
+            border-radius: 25px;
+            font-size: 18px;
+            color:white;
+            cursor: pointer;
+            outline: none;
+        }
+        input[type="submit"]:hover{
+        border-color: purple;
+        transition: .5s;
+        }
+        .registrarse{
+            margin: 30px 0;
+            text-align: center;
+            font-size: 16px;
+            color:black;
+        }
+        .registrarse a{
+            color:blue;
+            text-decoration: none;
+        }
+        .registrarse a:hover{
+            text-decoration: none;
+        }
+    }
+    .curso {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .curso div{
+        background: linear-gradient(150deg,#48C9B0, #2E4053);
+        padding: 2em;
+        margin: 20px;
+    
+    }
+    .curso div:hover{
+        border: 2px solid black;
+    }
+    .curso .mecanica{
+        background: url(/css/mecanica.png);
+        width: 230px;
+        height: 230px;
+    }
+    .curso .cocina{
+        background: url(/css/cocina.png);
+        width: 230px;
+        height: 230px;
+    }
+    .curso .carpinteria{
+        background: url(/css/carpinteria.png);
+        width: 230px;
+        height: 230px;
+    }
+    .curso .programacion{
+        background: url(/css/programa.png);
+        width: 230px;
+        height: 230px;
+    }
+    .logoYtitulo img{
+        position: relative;
+        left:45%;
+        
+    }
+    .logoYtitulo h1{
+        position: absolute;
+        top:12%;
+        left: 42%;
+    
+    }
+    .palabra{
+        position: relative;
+        left: 20%;
+        font-size: 35px;
+        font-family: cursive;
+    }
+    .curso .programacion input{
+        position: relative;
+        top: 25%;
+        
+    }
+    .curso .mecanica input{
+        position: relative;
+        top: 25%;
+    }
+    .curso .carpinteria input{
+        position: relative;
+        top: 25%;
+    }
+    .curso .cocina input{
+        position: relative;
+        top: 25%;
+    } 
+    .col {
+        background-color: #fdfdfd;
+        border: 2px solid gray;
+        margin: 2em;
+        padding: 0px;
+    }
+    .VarCocina{
+        display: grid;
+        grid-template-columns: 50% 20% auto;
+        grid-template-rows: 100px auto 220px;
+        justify-content:center ;
+        width: 80%;
+        margin: 0 auto;
+        background-color: #2E4053;
+        padding: 20px;
+        border:1px solid black
+    
+    }
+    .carpinteria-colum{
+        border: 2px solid black;
+        margin: 2px;
+        padding: 2px;
+    }
+    .Mecanica-colum{
+        border: 2px solid black;
+        margin: 2px;
+        padding: 2px;
+    }
+/*Dekstop*/
+@media (max-width: 1024px){
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    background: linear-gradient(150deg,#48C9B0, #2E4053);
+    height: 100vh;
+}
+.formulario{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background-color: white;
+    border-radius: 10px;
+
+}
+.formulario img{
+    position: relative;
+    left: 29%;
+}
+
+.formulario h1{
+    text-align: center;
+     padding: 0 0 20px 0;
+     border-bottom: 1px solid silver ;
+
+}
+.formulario form {
+    padding: 0 40px;
+    box-sizing: border-box;
+} 
+form .usuario {
+    position: relative;
+    border-bottom: 2px solid #adadad;
+    margin: 30px 0;
+}
+
+    .usuario input{
+        width: 100%;
+        padding: 0 5px;
+        height: 40px;
+        font-size: 16 px;
+        border: none;
+        background: none;
+        outline: none;
+
+    }
+    .usuario label{
+        position: absolute;
+        top: 50%;
+        left: 5px;
+        color: #adadad;
+        transform: translateY(-50%);
+        font-size: 16px;
+        pointer-events: none;
+        transition: .5s; 
+
+    }
+    .usuario span::before {
+        content: '';
+        position: absolute;
+        top: 40px;
+        left:0;
+        width: 2px;
+        background: #6C3483;
+        
+    }
+    .usuario input:focus ~ label,
+    .usuario input:focus ~ label{
+      top:-5px;
+      color: #6C3483;         
+    }
+    .usuario input:focus ~span::before,
+    .usuario input:focus ~span::before{
+        width: 100%;
+    }
+    .recordar:hover{
+        text-decoration: underline;
+    }
+    input[type="submit"]{
+        width: 100%;
+        height: 50px;
+        border: 1px solid;
+        background: #6C3483;
+        border-radius: 25px;
+        font-size: 18px;
+        color:white;
+        cursor: pointer;
+        outline: none;
+    }
+    input[type="submit"]:hover{
+    border-color: purple;
+    transition: .5s;
+    }
+    .registrarse{
+        margin: 30px 0;
+        text-align: center;
+        font-size: 16px;
+        color:black;
+    }
+    .registrarse a{
+        color:blue;
+        text-decoration: none;
+    }
+    .registrarse a:hover{
+        text-decoration: none;
+    }
+
+.curso {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.curso div{
+    background: linear-gradient(150deg,#48C9B0, #2E4053);
+    padding: 2em;
+    margin: 20px;
+
+}
+.curso div:hover{
+    border: 2px solid black;
+}
+.curso .mecanica{
+    background: url(/css/mecanica.png);
+    width: 230px;
+    height: 230px;
+}
+.curso .cocina{
+    background: url(/css/cocina.png);
+    width: 230px;
+    height: 230px;
+}
+.curso .carpinteria{
+    background: url(/css/carpinteria.png);
+    width: 230px;
+    height: 230px;
+}
+.curso .programacion{
+    background: url(/css/programa.png);
+    width: 230px;
+    height: 230px;
+}
+.logoYtitulo img{
+    position: relative;
+    left:45%;
+    
+}
+.logoYtitulo h1{
+    position: absolute;
+    top:12%;
+    left: 42%;
+
+}
+.palabra{
+    position: relative;
+    left: 20%;
+    font-size: 35px;
+    font-family: cursive;
+}
+.curso .programacion input{
+    position: relative;
+    top: 25%;
+    
+}
+.curso .mecanica input{
+    position: relative;
+    top: 25%;
+}
+.curso .carpinteria input{
+    position: relative;
+    top: 25%;
+}
+.curso .cocina input{
+    position: relative;
+    top: 25%;
+} 
+.col {
+    background-color: #fdfdfd;
+    border: 2px solid gray;
+    margin: 2em;
+    padding: 0px;
+}
+.VarCocina{
+    display: grid;
+    grid-template-columns: 50% 20% auto;
+    grid-template-rows: 100px auto 220px;
+    justify-content:center ;
+    width: 80%;
+    margin: 0 auto;
+    background-color: #2E4053;
+    padding: 20px;
+    border:1px solid black
+
+}
+.carpinteria-colum{
+    border: 2px solid black;
+    margin: 2px;
+    padding: 2px;
+}
+.Mecanica-colum{
+    border: 2px solid black;
+    margin: 2px;
+    padding: 2px;
+}
+}
